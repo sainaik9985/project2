@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+";
+echo "My Bike is " . $COLOR . "<br>";
+echo "My Book is " . $coLOR . "<br>";
+?>
+</body>
+</html>

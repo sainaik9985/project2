@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;   
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100mvh;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            
+        }
+        .card{
+            height: 400px;
+            margin: 50px;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+        }
+        img{
+            width: 350px;
+            height:500px; 
+            border-radius: 3px;
+            transition: .5s;
+        }
+        
+        .intro{
+            height: 200px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+          position: absolute;
+          bottom: 20px;
+          background: rgb(27, 27, 27 ,5);
+          color: antiquewhite;
+          transition: .5s;
+        }
+        h1{
+            margin: 10px;
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+            margin: 20px;
+            visibility: hidden;
+            opacity: 0;
+        }
+        span{
+            font-weight: bold;  
+        }
+        .card:hover{
+            cursor: pointer;
+        }
+        .card:hover p{
+            opacity: 1;
+            visibility: visible;
+        }
+        .card:hover img{
+            transform: scale(1.1) rotate(-3deg);
+        }
+.card:hover .intro{
+    height: 220px;
+    bottom: 20px;
+    background-color: black;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./sample2.jpg" alt="">
+
+        <div class="intro">
+            <h1>director</h1>
+            <p>  Suresh.. the <span> director </span> of the 10000coders contact num : xxxxxxxxxx</p>
+        
+        </div>
+        </div> 
+        <div class="card">
+            <img src="./th (sample).jpeg" alt="">
+
+        <div class="intro">
+            <h1>Trainer</h1>
+            <p> Chaitnya.. the<span> Trainer </span> of the 10000coders contact num : xxxxxxxxxx </p>
+        
+        </div>
+        </div>    
+        <div class="card">
+            <img src="./sample3.jpg" alt="">
+
+        <div class="intro">
+            <h1> co-director</h1>
+            <p>the <span>director</span>of the 10000coders</p>
+        
+        </div>
+        </div>       
+        
+        
+    </div>
+</body>
+</html>
